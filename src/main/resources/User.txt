@@ -1,0 +1,10 @@
+Иван,Pass1234,ivan.ivanov@gmail.com
+Мария,Secure567,maria.petrova@yandex.ru
+Александр,Alex2023,alexander.sidorov@mail.ru
+Екатерина,Katya789,ekaterina.kuznetsova@gmail.com
+Дмитрий,Dima5555,dmitry.popov@yandex.ru
+Анна,Anna2024,anna.smirnova@mail.ru
+Сергей,Sergey123,sergey.volkov@gmail.com
+Ольга,Olga7777,olga.kozлова@yandex.ru
+Павел,Pavel888,pavel.morozov@mail.ru
+Наталья,Nata9999,natalya.orlova@gmail.com
