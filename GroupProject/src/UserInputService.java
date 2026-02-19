@@ -6,6 +6,7 @@ public class UserInputService {
     public UserInputService(){
         this.userScan = new Scanner(System.in);
     }
+
     public int readInt(String prompt) {
         while (true) {
             System.out.print(prompt);
