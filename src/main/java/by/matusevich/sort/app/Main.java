@@ -2,7 +2,7 @@ package by.matusevich.sort.app;
 import by.matusevich.sort.app.model.User;
 import by.matusevich.sort.app.model.UserValidator;
 import by.matusevich.sort.app.service.UserInputService;
-import by.matusevich.sort.app.util.Utils.src.util.FileUtils;
+import by.matusevich.sort.app.util.FileUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,11 +59,7 @@ public class Main {
                     else {
                         int typeOfSort = input.readInt("Выберите способ сортировки\n1-По имени \n2-По паролю \n3-По почте \n");
                         switch (typeOfSort) {
-                            case 1:
-                                break;
-                            case 2:
-                                break;
-                            case 3:
+                            case 1, 2, 3:
                                 break;
                         }
                     }

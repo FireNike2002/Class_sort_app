@@ -3,7 +3,7 @@ package by.matusevich.sort.app.service;
 import java.util.Scanner;
 
 public class UserInputService {
-    private Scanner userScan;
+    private final Scanner userScan;
     public UserInputService(){
         this.userScan = new Scanner(System.in);
     }

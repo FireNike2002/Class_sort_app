@@ -1,9 +1,9 @@
 package by.matusevich.sort.app.model;
 
 public class User {
-    private String name;
-    private String password;
-    private String email;
+    private final String name;
+    private final String password;
+    private final String email;
 
     public User(Builder builder) {
         this.name = builder.name;
