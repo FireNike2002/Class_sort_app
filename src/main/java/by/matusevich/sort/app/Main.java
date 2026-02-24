@@ -46,8 +46,7 @@ public class Main {
                             addedCount++;
                             System.out.println("Пользователь " + user.getName() + " добавлен");
                         }
-                    }
-                    System.out.println("Загружено " + addedCount + " пользователей из файла");
+                        System.out.println("Загружено " + addedCount + " пользователей из файла");
                     break;
 
                 case 2:
