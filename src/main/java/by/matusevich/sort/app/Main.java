@@ -32,21 +32,22 @@ public class Main {
 
             switch (operation) {
                 case 1:
-                    List<String[]> lines = FileUtils.readAndValidateFile("Укажите путь к файлу");
-                    int addedCount = 0;
-                    for (String[] parts : lines) {
-                        if (parts.length >= 3) {
-                            User user = User.builder()
-                                    .setName(parts[0])
-                                    .setPassword(parts[1])
-                                    .setEmail(parts[2])
-                                    .build();
-                            userList.add(user);
-                            addedCount++;
-                            System.out.println("Пользователь " + user.getName() + " добавлен");
+                    String path = input.readString("Укажите путь к файлу ");
+                        List<String[]> lines = FileUtils.readAndValidateFile(path);
+                        int addedCount = 0;
+                        for (String[] parts : lines) {
+                            if (parts.length >= 3) {
+                                User user = User.builder()
+                                        .setName(parts[0])
+                                        .setPassword(parts[1])
+                                        .setEmail(parts[2])
+                                        .build();
+                                userList.add(user);
+                                addedCount++;
+                                System.out.println("Пользователь " + user.getName() + " добавлен");
+                            }
                         }
-                    }
-                    System.out.println("Загружено " + addedCount + " пользователей из файла");
+                        System.out.println("Загружено " + addedCount + " пользователей из файла");
                     break;
 
                 case 2:
