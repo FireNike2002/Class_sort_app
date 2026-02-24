@@ -165,7 +165,7 @@ public class Main {
                     }
 
                     if (strategySet) {
-                        userList = service.shellSort(userList); // сохраняем результат!
+                        userList = service.insertionSort(userList); // сохраняем результат!
                         System.out.println("Список отсортирован.");
                     }
                     break;

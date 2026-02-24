@@ -9,8 +9,4 @@ public class RandomInputStrategy {
     public RandomInputStrategy(UserDataGenerator generator) {
         this.generator = generator;
     }
-
-    public List<User> generateUsers(int count) {
-        return generator.generateUsers(count);
-    }
 }
