@@ -34,19 +34,17 @@ public class Main {
                 case 1:
                     String path = input.readString("Укажите путь к файлу ");
                     List<String[]> lines = FileUtils.readAndValidateFile(path);
-                    int addedCount = 0;
+                    
                     for (String[] parts : lines) {
                         if (parts.length >= 3) {
-                            User user = User.builder()
-                                    .setName(parts[0])
-                                    .setPassword(parts[1])
-                                    .setEmail(parts[2])
-                                    .build();
-                            userList.add(user);
-                            addedCount++;
-                            System.out.println("Пользователь " + user.getName() + " добавлен");
-                        }
-                        System.out.println("Загружено " + addedCount + " пользователей из файла");
+                        User user = User.builder()
+                                .setName(parts[0])
+                                .setPassword(parts[1])
+                                .setEmail(parts[2])
+                                .build();
+                        userList.add(user);
+                    }
+                    System.out.println("Загружено пользователей из файла: " + lines.size());
                     break;
 
                 case 2:
